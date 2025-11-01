@@ -1,0 +1,82 @@
+/* Simple clean bottle-green theme */
+* { box-sizing: border-box; margin:0; padding:0; font-family: "Segoe UI", Arial, sans-serif; }
+
+body { background:#f4f9f4; color:#222; min-height:100vh; }
+
+header, footer {
+  background:#114b40; color:#fff; padding:14px 20px;
+}
+header .top { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:auto; }
+header h1 { font-size:30px; }
+header nav a { color:#cfeadf; font-size:18px; margin-left:18px; text-decoration:none; font-weight:650; }
+header nav a:hover { color:#fff; }
+
+
+.container { max-width:1100px; margin:24px auto; padding:18px; background:#fff; border-radius:8px; box-shadow:0 3px 10px rgba(0,0,0,0.06); }
+
+h2 { color:#114b40; margin-bottom:14px; }
+
+form.block { background:#f7fff7; padding:12px 14px; border:1px solid #d4eadf; border-radius:6px; margin-bottom:18px; }
+form.block input[type="text"], form.block input[type="email"], form.block input[type="number"], form.block select, form.block input[type="file"] {
+  padding:9px; margin:8px 0; border:1px solid #c9dfd0; border-radius:6px; width:100%;
+}
+form.inline { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+form.inline input, form.inline select { width:auto; flex:1; min-width:180px; }
+
+button.btn {
+  background:#0b604f; color:#fff; border:none; padding:10px 14px; border-radius:6px; cursor:pointer; font-weight:600;
+}
+button.btn:hover { background:#0a523f; }
+
+.msg { padding:10px; border-radius:6px; margin-bottom:12px; font-weight:600; }
+.msg.success { background:#e1f5eb; color:#0b6b50; border:1px solid #9fe2c8; }
+.msg.error { background:#ffecec; color:#b31818; border:1px solid #f5b4b4; }
+
+.table { width:100%; border-collapse:collapse; margin-top:10px; }
+.table th, .table td { border:1px solid #e3efe6; padding:10px; text-align:left; vertical-align:middle; }
+.table th { background:#0b604f; color:#fff; text-transform:uppercase; font-size:13px; }
+.table tr:nth-child(even) { background:#fbfff9; }
+
+.table img.thumb { height:60px; width:auto; border-radius:6px; object-fit:cover; border:1px solid #ddd; }
+
+.actions a { color:#0b604f; text-decoration:none; margin-right:8px; font-weight:600; }
+.actions a.delete { color:#b71c1c; }
+.actions a:hover { text-decoration:underline; }
+
+/* responsive */
+@media (max-width:720px) {
+  .container { padding:12px; margin:12px; }
+  header .top { flex-direction:column; align-items:flex-start; gap:8px; }
+  .table th, .table td { font-size:13px; padding:8px; }
+}
+
+
+/* upadted code */
+/* Fix login form input + button */
+body.login-page form.block input[type="email"],
+body.login-page form.block input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #c9dfd0;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body.login-page form.block button {
+  background: #114b40;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.8s ease;
+}
+
+body.login-page form.block button:hover {
+  background: #0d3b31;
+}
+
